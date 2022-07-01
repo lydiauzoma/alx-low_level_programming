@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - Print alphabet expect q and e
- * return - Always 0 (success)
+ * main - Entry point
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-char cha;
+char ch;
 for (ch = 'a'; ch <= 'z'; ch++)
 if (ch != 'q' && ch != 'e')
 {
