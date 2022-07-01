@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Print the alphabets in lowercase than uppercase
  * Return: Always 0 (success)
  */
-int(void)
+int main(void)
 {
 int ch;
 for (ch = 97; ch <= 122; ch++)
