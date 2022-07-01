@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Assign a random number to a variable
- * Return -Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
