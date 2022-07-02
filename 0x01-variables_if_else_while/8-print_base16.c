@@ -12,8 +12,6 @@ putchar(c);
 }
 for (c = 'a'; ch <= 'f'; c++)
 {
-putchar(c);
-}
 putchar('/n');
 return (0);
 }
