@@ -1,17 +1,22 @@
 #include <stdio.h>
+
 /**
- * main - Print all possible combinations of single digit
- * Reture :Always 0 .
+ * main - Prints a serie of numbers with commas
+ *
+ * Return: Always (Success);
  */
-int mai(void)
+int main(void)
 {
-int ch;
-for (ch = 48; ch <= 57; ch++)
+int c;
+for (c = '0'; c <= '9'; c++)
 {
-putchar(ch);
-if (ch !=57)
-putchar(44);
-putchar(32);
+putchar(c);
+if (c != '9')
+{
+putchar(',');
+putchar(' ');
 }
+}
+putchar('\n');
 return (0);
 }
