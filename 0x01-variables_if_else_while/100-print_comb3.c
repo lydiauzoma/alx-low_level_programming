@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 /**
  * main - program entry point 
  * Return 0 on success .error code otherwise
