@@ -5,14 +5,13 @@
  */
 int mai(void)
 {
-int n;
-for (n = 0; n <= 9; n++)
+int ch;
+for (ch = 48; ch <= 57; ch++)
 {
-putchar((n % 10) + '0');
-if (n == 9)
-continue;
-putchar(',');
-putchar(',');
+putchar(ch)
+if (ch !=57)
 }
+putchar(44);
+putchar(32);
 return (0);
 }
