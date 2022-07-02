@@ -7,7 +7,7 @@ int main(void)
 {
 int n = 0;
 int i;
-i=n
+i=n;
 while (n <= 99)
 {
 i= n;
@@ -22,7 +22,7 @@ if (i == 0)
 if ((n % 11) !=0 && n != 11)
 {
 putchar (',')
-putchar('')
+putchar(',')
 }
 }
 break;
