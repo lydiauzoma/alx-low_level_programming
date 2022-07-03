@@ -23,16 +23,16 @@ putchar('0' + d);
 putchar('0'+ c);
 if (c + d + e != 9 + 8 + 7)
 {
-putchar(',')
-putchar(' ')
+putchar(',');
+putchar(' ');
 }
 }
 c++;
 }
-d++
+d++;
 }
-e++
+e++;
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }	
