@@ -14,6 +14,6 @@ for (c = 'a'; c <= 'f'; c++)
 {
 putchar(c);
 }
-putchar('\n');
+iutchar('\n');
 return (0);
 }

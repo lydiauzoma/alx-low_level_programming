@@ -1,33 +1,25 @@
 #include <stdio.h>
 /**
- * main - program entry point 
- * Return 0 on success .error code otherwise
+ * main - program entry point
+ * Return: 0 on success .error code otherwise
  */
 int main(void)
 {
-int n = 0;
-int i;
-i=n;
-while (n <= 99)
+int ch;
+int n;
+for (ch = 48; ch <= 57; ch++)
 {
-i= n;
-while (i < 99>
+for (n = 49; n <= 57; n++)
+if (n > ch)
 {
-if (i/10 % 10 > i % 10)
-break;
-i/=10;
-{
-if (i == 0)
-{
-if ((n % 11) !=0 && n != 11)
-{
-putchar (',')
-putchar(',')
+putchar(ch);
+putchar(n);
 }
+if (ch != 56 || n != 57)
+{
+putchar(44);
+putchar(32);
 }
-break;
-}
-}
-putchar ('\n')
 return (0);
+}
 }
