@@ -6,33 +6,23 @@
  */
 int main(void)
 {
-int c;
-int d;
-int e = 0;
-while (e < 10)
-d = 0;
-while (d < 10)
+int a, b, c,;
+for (b = a + 1; b < 9; b++)
 {
-c = 0;
-while (c < 10)
+for (b = a + 1; b < 9; b++)
 {
-if (c != d && d != e && e < d && d < c)
+for (c = b + 1; c < 10; c++)
 {
-putchar('0' + e);
-putchar('0' + d);
-putchar('0'+ c);
-if (c + d + e != 9 + 8 + 7)
-{
+putchar((a % 10) + '0');
+putchar((b % 10) + '0');
+putchar((c % 10) + '0');
+if (a == 7 && b == 8 && c == 9)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-c++;
-}
-d++;
-}
-e++;
 }
 putchar('\n');
 return (0);
-}	
+}
