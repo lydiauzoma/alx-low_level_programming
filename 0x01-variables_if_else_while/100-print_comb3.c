@@ -5,21 +5,28 @@
  */
 int main(void)
 {
-int ch;
-int n;
-for (ch = 48; ch <= 57; ch++)
+int c;
+int d = 0;
+while (d < 10)
 {
-for (n = 49; n <= 57; n++)
-if (n > ch)
+c = 0;
+while (c < 10)
 {
-putchar(ch);
-putchar(n);
+if (d != c && d < c)
+{
+putchar('0' + d);
+putchar('0' + c);
+if (c + d != 17)
+{
+putchar(',');
+putchar(' ');
 }
-if (ch != 56 || n != 57)
-{
-putchar(44);
-putchar(32);
 }
+c++;
+}
+d++;
+}
+putchar('\n');
 return (0);
 }
-}
+
