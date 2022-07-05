@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - make alphabete ten times
+ * print_alphabet_x10 -> prints the  alphabete ten times
  *
  * Return:alway 0
  *
@@ -18,5 +18,4 @@ void print_alphabet_x10(void);
 	}
 	putchar('\n');
 	}
-	}
- 
+}
