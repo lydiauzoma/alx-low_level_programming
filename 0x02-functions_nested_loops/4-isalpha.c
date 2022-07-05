@@ -1,16 +1,10 @@
 #include "main.h"
-/*
- *  _isalpha - check alphabetical letters
- * @c:carater recibo por main.
- * Return: 1 if c is lowercase
+/**
+ *  _isalpha -> Check alphabetical letters
+ *  @c: a character argument
+ * Return: 1 and 0 depending on condition
  */
 int _isalpha(int c)
-if ((c >= 'a' && c <= 'z' || (c >= 'A' && c <= 'Z'))
 {
-return (1);
-}
-else
-{
-return (0);
-}
+return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
