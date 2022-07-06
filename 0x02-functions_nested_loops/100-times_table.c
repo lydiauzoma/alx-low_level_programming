@@ -1,28 +1,48 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Sums multplies 3 0r 5
- *
- * Description:mulpties between 0 and 1024
- * return: Always (0) success
+ * print_times_table - prints the n times table,
+ *@n: number of the time table
  */
-int main(void)
+void print_time_table(int n)
 {
-	int start_num, end_num, total;
+	int i, j, k;
 
-	end_num = 1024;
-	total = 0;
-	for (start_num = 0; start_num < end_num; start_num++)
+	if (n >= 0 && n <= 15)
 	{
-	if ((start_num % 3 == 0) || (start_num % 5 == 0))
+	for (i = 0; i <= n; i++)
 	{
-		total = total + start_num;
-	}
-	else
+	for (j = 0; j <= n; j++)
 	{
-		continue;
+	k = j * 1;
+	if (j == 0)
+	{
+	_putchar(k + '0')
+	}
+	else if (k < 10 && j != 0)
+	{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar(k + '0');
+	}
+	else if (k >= 10 && k < 100)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar((k / 10) + '0');
+		_putchar((k % 10) + '0');
+	}
+	else if (k >= 100)
+	{
+	_putchar(',');
+	_putchar(' ');
+	_putchar((k / 100) + '0');
+	_putchar(((k / 10) % 10) + '0');
+	_putchar((k % 10) + '0');
 	}
 	}
-	printf(("%d", total);
-	printf("\n");
-	return (0);
-}
+	_putchar('\n');
+	}
+	}
