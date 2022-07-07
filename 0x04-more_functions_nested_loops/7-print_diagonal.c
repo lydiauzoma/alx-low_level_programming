@@ -9,7 +9,7 @@ void print_square(int size)
 {
 	int i = 0, ii;
 
-	while (i < && n > 0)
+	while (i < n && n > 0)
 	{
 		ii = 0;
 		while (ii < i)
