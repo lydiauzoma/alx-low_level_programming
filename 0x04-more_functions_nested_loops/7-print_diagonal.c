@@ -5,7 +5,7 @@
  * @n: number of \\ to be printed
  * Return:void
  */
-void print_square(int n)
+void print_diagonal(int n)
 {
 	int i = 0, ii;
 
