@@ -5,22 +5,22 @@
  * @n: number of \\ to be printed
  * Return:void
  */
-void print_square(int size)
+void print_square(int n)
 {
 	int i = 0, ii;
 
 	while (i < n && n > 0)
 	{
-		ii = 0;
-		while (ii < i)
+	ii = 0;
+	while (ii < i)
 	{
-		_putchar(' ');
-		ii++;
-	{
-		_putchar('\\');
-		_putchar('\n');
-		i++;
+	_putchar(' ');
+	ii++;
 	}
-	if ( == 0)
-		_putchar('\n');
+	_putchar('\\');
+	_putchar('\n');
+	i++;
+	}
+	if (i == 0)
+	_putchar('\n');
 }
