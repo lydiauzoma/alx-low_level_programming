@@ -3,12 +3,10 @@
 /**
  * _isupper -> this is  a function to check upper case upper case alphas
  * @c: an integer paramer
- * Return: something but success
+ * Return: 1 if c is uppercase 0 otherwis
  */
-int _isupper(int c)
+int  _isupper(int c)
 {
-	if (c >= 'A' && c <= 'z')
-	return (1);
-	else
-	return (0);
+	return (c >= 'A' && c <= 'Z');
+
 }
