@@ -4,3 +4,5 @@ In computer programming and software development, debugging is the process of fi
 
 
 Debugging tactics can involve interactive debugging, control flow analysis, unit testing, integration testing, log file analysis, monitoring at the application or system level, memory dumps, and profiling. Many programming languages and software development tools also offer programs to aid in debugging, known as debuggers
+
+the aim is to understand how to debug codes without using the checkers 
