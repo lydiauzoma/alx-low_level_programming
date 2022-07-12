@@ -18,6 +18,6 @@ void rev_string(char *s)
 	while (i < n)
 	{
 	s[i] = tmp[i];
-	i++
+	i++;
 	}
 }
