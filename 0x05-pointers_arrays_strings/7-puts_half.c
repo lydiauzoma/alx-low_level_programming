@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * puts_half -> function to print second half
+ * puts_half -> puts_haif of second half
  * @str: string to be printed
  */
 void puts_half(char *str)
@@ -13,7 +13,7 @@ void puts_half(char *str)
 	y = x / 2 + 1;
 	else
 	y = x / 2;
-	for(z = y, z < x z++)
+	for(z = y; z < x; z++)
 	_putchar(str[z]);
 	_putchar('\n');
 }
