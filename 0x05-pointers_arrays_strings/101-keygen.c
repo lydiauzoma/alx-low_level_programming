@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int index = 0, sum = 0, diff1 , diff2;
+	int index = 0, sum = 0, diff1, diff2;
 	char password[90];
 
 	srand(time(0));
@@ -15,10 +15,10 @@ int main(void)
 	while (sum < 2772)
 	{
 	password[index] = 33 + rand() % 94;
-	sum += pasword[index++];
+	sum += password[index++];
 	}
 
-	pasword[index] = '\0';
+	password[index] = '\0';
 
 	if  (sum != 2772)
 	{
