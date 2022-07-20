@@ -12,7 +12,7 @@ int is_prime(unsigned int n, unsigned int c)
 		if (n == c)
 			return (0);
 	}
-	return (0 + is prime(n, c + 1));
+	return (0 + is_prime(n, c + 1));
 }
 /**
  * is_prime_number - detects prime number
