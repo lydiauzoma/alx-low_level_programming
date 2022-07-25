@@ -35,9 +35,9 @@ char *argstostr(int ac, char **av)
 	{
 		for (x = 0; av[w][x] != '\0'; x++, y++)
 		{
-			str[z] = av[w][x];
+			str[y] = av[w][x];
 		}
-		str[z] = '\n';
+		str[y] = '\n';
 		y++;
 	}
 	str[y] = '\0';
