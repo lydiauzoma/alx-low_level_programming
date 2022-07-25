@@ -7,7 +7,7 @@
 *@c: the memory of address to print
 *Return:NULL if size is 0
 */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	unsigned int x;
 	char *y;
