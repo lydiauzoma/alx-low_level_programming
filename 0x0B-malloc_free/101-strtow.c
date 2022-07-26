@@ -20,10 +20,10 @@ int decogn(char *s)
 	}
 	else if (i == 0)
 	{
-		n++
+		n++;
 	}
 	}
-	n++
+	n++;
 		return (n);
 	}
 /**
@@ -31,10 +31,10 @@ int decogn(char *s)
  * @str:string
  * Return: pointer to an array
  */
-	char **strtow(char *str)
-	{
-		int a, b, c, d, e = 0, f = 0;
-		char **x;
+char **strtow(char *str)
+{
+	int a, b, c, d, e = 0, f = 0;
+	char **x;
 
 	if (str == NULL || *str == '\0')
 	return (NULL);
@@ -65,13 +65,13 @@ int decogn(char *s)
 	}
 	for (d = 0; d < b; d++)
 	x[f][d] = str[a + d];
-	x[f][c] = '\0';
+	x[f][d] = '\0';
 	f++;
 	a += b;
 	}
 	else
-	a++
+	a++;
 	}
 	return (x);
 	}
-
+}
