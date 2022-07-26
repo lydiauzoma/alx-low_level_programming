@@ -42,33 +42,33 @@ char **strtow(char *str)
 	 decs = deccount(str);
 	if (!decs)
 		return (NULL);
-	 chr = malloc((decs + 1) * sizeof(*chr));
-	 if (chr == NULL)
-		 return (NULL);
-	 while (*str)
-	 {
-		 if (*str == ' ')
-		 {
-			 str += 1;
-			 continue;
-		 }
-		 for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
-			 ;
-		 chr[r] = malloc(i + 1);
-		 if (chr[r] == NULL)
-		 {
-			 for (i = 0; i < r; i++)
-				 free(chr[i]);
-			 free(chr);
-			 return (NULL);
-		 }
-		 for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
-			 chr[r][i] = str[i];
-		 chr[r][i] = '\0';
-		 r++;
-		 str += i;
-	 }
-	 chr[r] = NULL;
-	 return (chr);
+	chr = malloc((decs + 1) * sizeof(*chr));
+	if (chr == NULL)
+	return (NULL);
+	while (*str)
+	{
+	if (*str == ' ')
+	{
+	str += 1;
+	continue;
+	}
+	for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
+	;
+	chr[r] = malloc(i + 1);
+	if (chr[r] == NULL)
+	{
+	for (i = 0; i < r; i++)
+	free(chr[i]);
+	free(chr);
+	return (NULL);
+	}
+	for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
+	chr[r][i] = str[i];
+	chr[r][i] = '\0';
+	r++;
+	str += i;
+	}
+	chr[r] = NULL;
+	return (chr);
 }
 
