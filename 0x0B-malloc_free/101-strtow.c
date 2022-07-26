@@ -26,11 +26,13 @@ int decogn(char *s)
 	n++;
 		return (n);
 	}
+
 /**
  * strtow -> slipt a string into words
  * @str:string
  * Return: pointer to an array
  */
+
 char **strtow(char *str)
 {
 	int a, b, c, d, e = 0, f = 0;
@@ -45,10 +47,10 @@ char **strtow(char *str)
 	if (x == NULL)
 	return (NULL);
 	x[e - 1] = NULL;
-	i = 0;
+	a = 0;
 	while (str[a])
 	{
-	if (str[a] != ' ' && (a == 0 || str[e - 1] == ' '))
+	if (str[a] != ' ' && (a == 0 || str[a - 1] == ' '))
 	{
 	for (b = 1; str[a + b] != ' ' && str[a + b]; b++)
 				;
