@@ -2,30 +2,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * count -> counts the number of words in a string
- * @s: string parameter
+ *deccount -> counts the number of words in a string
+ * @str: string parameter
  * Return:number of words
  */
-int count(char *s)
+int deccount(char *str)
 {
-	int i, n = 0;
+	int i, decs = 0, f = 0;
 
 	for (i = 0; s[i]; i++)
 	{
 	if (s[i] == ' ')
 	{
-	if (s[i + 1] != ' ' && s[i + 1] != '\0')
+	f = 0;
+	}
+	else if (!f)
 	{
-		n++;
-	}
-	else if (i == 0)
-	{
-		n++;
+		f = 1;
+		decs++;
 	}
 	}
-	n++;
-		return (n);
-	}
+	return (words);
+}
+
 
 /**
  * strtow -> slipt a string into words
@@ -35,45 +34,41 @@ int count(char *s)
 
 char **strtow(char *str)
 {
-	int a, b, c, d, e = 0, f = 0;
-	char **x;
+	int i, r = 0, dec;
+	char **chr;
 
-	if (str == NULL || *str == '\0')
-	return (NULL);
-	e = count(str);
-	if (e == 1)
-	return (NULL);
-	x = (char **)malloc(e * sizeof(char *));
-	if (x == NULL)
-	return (NULL);
-	x[e - 1] = NULL;
-	a = 0;
-	while (str[a])
-	{
-	if (str[a] != ' ' && (a == 0 || str[a - 1] == ' '))
-	{
-	for (b = 1; str[a + b] != ' ' && str[a + b]; b++)
-				;
-	b++;
-	x[f] = (char *)malloc(b * size(char));
-	b--;
-	x([f] == NULL)
-	{
-	for (c = 0; c < f; c++)
-	free(x[c]);
-	free(x[e - 1]);
-	free(x);
-	return (NULL);
-	}
-	for (d = 0; d < b; d++)
-	x[f][d] = str[a + d];
-	x[f][d] = '\0';
-	f++;
-	a += b;
-	}
-	else
-	a++;
-	}
-	return (x);
-	}
+	if (str == NULL)
+		return (NULL);
+	 decs = deccount(str)
+	if (!words)
+		return (NULL);
+	 char = malloc((decs + 1) * sizeof(*chr));
+	 if (chr == NULL)
+		 return (NULL);
+	 while (*str)
+	 {
+		 if (*str == ' ')
+		 {
+			 str += 1;
+			 continue;
+		 }
+		 for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
+			 ;
+		 chr[r] = malloc(i + 1);
+		 if (chr[r] == NULL)
+		 {
+			 for (i = 0; i < r; i++)
+				 free(chr[i]);
+			 free(chr);
+			 return (NULL);
+		 }
+		 for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
+			 chr[r][i] = str[i];
+		 chr[r][i] = '\0';
+		 r++;
+		 str += i;
+	 }
+	 chr[r] = NULL;
+	 return (chr);
 }
+
