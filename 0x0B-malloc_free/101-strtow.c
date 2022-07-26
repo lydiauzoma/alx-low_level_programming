@@ -10,9 +10,9 @@ int deccount(char *str)
 {
 	int i, decs = 0, f = 0;
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; str[i]; i++)
 	{
-	if (s[i] == ' ')
+	if (str[i] == ' ')
 	{
 	f = 0;
 	}
@@ -40,9 +40,9 @@ char **strtow(char *str)
 	if (str == NULL)
 		return (NULL);
 	 decs = deccount(str);
-	if (!words)
+	if (!decs)
 		return (NULL);
-	 char = malloc((decs + 1) * sizeof(*chr));
+	 chr = malloc((decs + 1) * sizeof(*chr));
 	 if (chr == NULL)
 		 return (NULL);
 	 while (*str)
