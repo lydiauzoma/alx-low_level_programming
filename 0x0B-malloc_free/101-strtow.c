@@ -22,7 +22,7 @@ int deccount(char *str)
 		decs++;
 	}
 	}
-	return (words);
+	return (decs);
 }
 
 
@@ -34,12 +34,12 @@ int deccount(char *str)
 
 char **strtow(char *str)
 {
-	int i, r = 0, dec;
+	int i, r = 0, decs;
 	char **chr;
 
 	if (str == NULL)
 		return (NULL);
-	 decs = deccount(str)
+	 decs = deccount(str);
 	if (!words)
 		return (NULL);
 	 char = malloc((decs + 1) * sizeof(*chr));
