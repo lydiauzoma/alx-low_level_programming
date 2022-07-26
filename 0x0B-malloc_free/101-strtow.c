@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * decogn -> counts the number of words in a string
+ * count -> counts the number of words in a string
  * @s: string parameter
  * Return:number of words
  */
-int decogn(char *s)
+int count(char *s)
 {
 	int i, n = 0;
 
@@ -40,7 +40,7 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 	return (NULL);
-	e = decogn(str);
+	e = count(str);
 	if (e == 1)
 	return (NULL);
 	x = (char **)malloc(e * sizeof(char *));
