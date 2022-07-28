@@ -20,6 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 		if (mem == NULL)
 		return (NULL);
+
 		scan = mem;
 
 	for (index = 0; index < (size * nmemb); index++)
