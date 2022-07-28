@@ -9,21 +9,21 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem;
-	char *scan;
-	unsigned int index;
+	char *a
+	unsigned int i;
 
-	if (nmemb == 0 || size == 0)
+	if (size == 0 || nmemb == 0)
+	{
 		return (NULL);
-
-	mem = malloc(size *nmemb);
-
-		if (mem == NULL)
-		return (NULL);
-
-		scan = mem;
-
-	for (index = 0; index < (size * nmemb); index++)
-		scan[index] = '\0';
-	return (mem);
+	}
+	a = malloc(size * nmemb);
+	if (a == NULL)
+	{
+	return (NULL);
+	}
+	for (i = 0; i < nmemb * size; i++)
+	{
+		x[i] = '\0';
+	}
+	return (x);
 }
