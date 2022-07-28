@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * _calloc -> function allocates memory for array
- *@nmemb:The number of element 
+ *_calloc -> function allocates memory for array
+ *@nmemb:The number of element
  *@size:The byte size of each array
  *Return: if nmemb = 0 , size = 0 or function fails = NULL.
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *non;
 	char *scan;
