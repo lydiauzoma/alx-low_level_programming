@@ -2,9 +2,9 @@
 
 /**
  * free_listint2 -> frees a linked list
- * @head: pointer to the head of the list
+ *@head: pointer to the head of the list
  *
- * Return: return nothing 
+ *Return: return nothing
  */
 void free_listint2(listint_t **head)
 {
