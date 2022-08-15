@@ -6,12 +6,12 @@
  *
  * Return: return nothing 
  */
- void free_listint2(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	listint_t *console;
 	listint_t **nemp = head;
 
-	if (temp != NULL)
+	if (nemp != NULL)
 	{
 	while (*head != NULL)
 	{
