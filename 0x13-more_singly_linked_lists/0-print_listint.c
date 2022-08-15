@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_listint -> function prints all elements of a linked list
- * @h pointer address 
- * Return: the number of node 
+ *print_listint -> function prints all elements of a linked list
+ *@h: pointer address
+ *Return: the number of node
  */
 size_t print_listint(const listint_t *h)
 {
