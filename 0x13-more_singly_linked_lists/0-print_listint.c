@@ -6,14 +6,13 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *cursor = h;
 	size_t count = 0;
 
-	while (cursor != NULL)
+	while (h)
 	{
-		printf("%d\n", cursor->n);
-		count += 1;
-		cursor = cursor->next;
+		count++;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 	return (count);
 }
