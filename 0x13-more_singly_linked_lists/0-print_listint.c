@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+
 /**
  *print_listint -> function prints all elements of a linked list
  *@h: pointer address
@@ -14,5 +16,6 @@ size_t print_listint(const listint_t *h)
 		printf("%d\n", h->n);
 		h = h->next;
 	}
+
 	return (count);
 }
