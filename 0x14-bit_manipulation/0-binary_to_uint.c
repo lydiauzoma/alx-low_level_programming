@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 	while ((b[len1] == '0') || (b[len1] == '1'))
 	{
 		sign <<= 1;
-		sign += b[len] - '0';
+		sign += b[len1] - '0';
 		len1++;
 	}
 	return (sign);
