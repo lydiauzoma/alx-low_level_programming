@@ -72,7 +72,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## WARNINGS!!!
 
-* This repo is done as a school assignment, Beware of copying my solutions. I recommend you study necessary materials and come up with your unique solution to the different tasks contained in the repo, feel free to reach out for help or guide [linkedln](https://www.linkedin.com/in/ejiofor-sanctus)
+* This repo is done as a school assignment, Beware of copying my solutions. I recommend you study necessary materials and come up with your unique solution to the different tasks contained in the repo, feel free to reach out for help or guide [linkedln](https://www.linkedin.com/in/lydiauzoma
 * This repo may contain errors. if you noticed any, please add a pull reques
 
 ## Acknowledgements
